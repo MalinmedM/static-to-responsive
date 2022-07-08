@@ -46,8 +46,8 @@ p {
 /*The widths are in a percentage!*/
 header {
 	/*height: 110px;*/
+	width: 100%;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -101,6 +101,7 @@ header nav ul li a{
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
 }
 
 .main-title {
@@ -215,15 +216,24 @@ footer span {
 
 @media all and (min-width: 1200px) {
 
+	header {
+		justify-content: space-between;
+	}
+
 	header h1 {
 	width: ;
 	padding: 0 3em 0 0;
-	border-bottom: 1px solid #eee;
+	border-bottom: none;
 	text-align: left;
 	}
 
 	header nav {
 		width: 40%;
+	}
+
+	header nav ul {
+			display: flex;
+			justify-content: space-between;
 	}
 
 }

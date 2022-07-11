@@ -8,12 +8,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
 }
 
 .container{
 	max-width: 1200px;
-	width: 90%;
+	width: 90%; /*to make it not touch the browser borders*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,7 +46,6 @@ p {
 header {
 	/*height: 110px;*/
 	width: 100%;
-	border-bottom: 3px solid #77a466;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,6 +56,7 @@ header h1 {
 	/*float: left;*/
 	margin: 0;
 	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
@@ -66,17 +65,20 @@ header h1 span {
 header nav {
 	/*float: right;*/
 	padding: 46px 0;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
+	text-align: center;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
 	padding: 0 10px;
-	display: inline;
+	/*display: inline;*/
 }
 header nav ul li a{
 	text-decoration: none;
@@ -187,6 +189,10 @@ footer span {
 
 @media all and (min-width: 768px) {
 
+	.bottom-section {
+		align-items: flex-start;
+	}
+
 	.section-one,
 	.section-two,
 	.section-three {
@@ -221,7 +227,7 @@ footer span {
 	}
 
 	header h1 {
-	width: ;
+	width: 30%;
 	padding: 0 3em 0 0;
 	border-bottom: none;
 	text-align: left;
